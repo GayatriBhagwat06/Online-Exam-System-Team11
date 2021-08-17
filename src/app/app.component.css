@@ -1,0 +1,33 @@
+.navbar {
+	padding: 10px 0;
+	transition: all .5s ease-in-out;
+	border: none;
+    background-color: #333;
+	background-color:rgba(0,0,0,0.5); 
+}
+li a {
+	float: right;
+}
+
+.navbar-nav li a {
+	color:#ffa80a;
+	font-size: 15px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 700;
+    /* float: right; */
+}
+
+.navbar-nav > li > a:focus,
+.navbar-nav > li > a:hover {
+	background: none;
+	color:#ffa80a;
+}
+.logbutton{
+	background-color: black;
+	color:#ffa80a;
+	font-size: 15px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 700;
+}

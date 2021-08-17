@@ -1,0 +1,19 @@
+div{
+    margin: auto;
+    width: 350px;
+    }
+    input{
+    display: block;
+    padding: 5px;
+    }
+    
+    input.ng-invalid.ng-dirty{
+    border:2px solid red ;
+    }
+    input.ng-valid.ng-touched{
+    border:2px solid greenyellow ;
+    }
+    form{
+    border: 5px solid #CCC;
+    padding: 40px;
+    }

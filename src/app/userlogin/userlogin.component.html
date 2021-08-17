@@ -1,0 +1,55 @@
+
+	<!-- <form [formGroup]="form1" method="post"> -->
+    <form method="post">
+
+    
+      <div class="container">
+        <div class="imgcontainer">
+            <h2>User Login</h2>
+          <img src="../../assets/images/user.png" alt="Avatar" class="avatar">
+        </div>
+
+		    <input type="text" placeholder="Enter Email ID" name="uname" [(ngModel)]="uEmail" required>
+		    
+      
+        
+        <input type="password" placeholder="Enter Password" name="psw" [(ngModel)]="uPassword" required> 
+        
+          <div align="center">
+            <button type="submit" (click)="Login()">Login</button>
+          </div>
+          <div align="center">
+            <span class="psw">Don't have an account? <a href="#" routerLink='/register'>Register here</a></span>
+          </div>
+        </div>    
+        
+        
+
+         
+		</form>
+	
+
+
+
+
+
+
+
+
+
+
+
+
+      <!-- <div *ngIf="form1.get('uEmail').hasError('required') && form1.get('uEmail').touched && form1.get('email').pristine" class="alert alert-danger" >
+          Please Enter email
+      </div>
+      <div *ngIf="form1.get('uEmail').invalid && form1.get('uEmail').dirty" class="alert alert-danger">
+          Please Enter Correct Email Address
+      </div> -->
+<!-- <div *ngIf="form1.get('uPassword').touched">
+          <div *ngIf="form1.get('uPassword').hasError('required')" class="alert alert-danger">
+              Please Enter password
+          </div>
+          <div *ngIf="form1.get('uPassword').invalid && form1.get('uPassword').dirty" class="alert alert-danger">
+              Please enter a password containing alphanumeric characters as well as special character
+          </div> -->

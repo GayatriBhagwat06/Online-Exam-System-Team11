@@ -1,0 +1,25 @@
+<app-menu-bar></app-menu-bar>
+
+<html  >
+  <script type = "text/javascript" >
+    function preventBack(){window.history.forward();}
+     setTimeout("preventBack()", 0);
+     window.onunload=function(){null};
+ </script>
+  <div class="card text-center">
+    <div class="card-body">
+      <h5 class="card-title">Add/Remove Question </h5>
+      <p class="card-text">You can add and remove questions for any particular course and level.</p><br>
+        <a href="add_question" class="btn btn-primary">Add Question/Remove Question</a>&nbsp;&nbsp;
+      
+    </div>    
+  </div>
+  <div class="card text-center">
+    <div class="card-body">
+      <h5 class="card-title">Search Student</h5>
+      <p class="card-text">You can search students who previously gave exam<br>
+        <br></p>
+        <a href="search_students" class="btn btn-primary">View Students</a>
+    </div>    
+  </div>
+  </html>

@@ -1,0 +1,53 @@
+.about-cover{
+    position: relative;
+   
+}
+.about-cover .abt-text-heading{
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	text-align: center;
+	margin-top:0;
+	transform: translate(-50%,-50%);
+}
+.team-members{
+    margin:15px;
+    padding:15px;
+}
+ .text-heading{
+    color: orange;
+    font-size: 55px;
+    font-weight: bold;
+    margin: 20px 0;
+	text-align: center;
+    text-transform: uppercase;
+}
+.about-content-box-inner{
+	top: 50%;
+	left: 50%;
+}
+.abt-our-company-wrapper .content-box{
+	width: 100%;
+	height: auto;
+}
+
+
+
+.t-margin{
+    margin-top: 40px;
+    }
+    
+    .about-our-company-wrapper{
+        max-width: 800px;
+        text-align: justify;
+        margin: 0 auto;
+    }
+    .heading{
+        text-align: center;
+        color: #ffa80a;
+        font-size: 32px;
+        font-weight: bold;
+        margin-bottom: 45px;
+    
+    }
+    

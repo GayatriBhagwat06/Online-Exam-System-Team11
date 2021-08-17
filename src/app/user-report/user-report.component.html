@@ -1,0 +1,29 @@
+<div>
+    Hi {{userFirstName}} {{userLastName}}
+
+</div>
+<table class="table table-bordered"   cellspacing=10 cellpadding=10 *ngIf="newScore">
+    <thead>
+        <tr>
+            <th>Subject Name</th>
+            <th>Level1 Score</th>
+            <th>Level2 Score</th>
+            <th>Level3 Score</th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let temp of newScore">
+            <td> {{temp.myexam.subjectName}}</td>
+            <td> {{temp.l1Score}}</td>
+            <td> {{temp.l2Score}}</td>
+            <td> {{temp.l3Score}}</td>
+           
+        </tr>
+      
+    </tbody>
+</table>
+
+            
+
+            

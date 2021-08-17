@@ -1,0 +1,14 @@
+<html> <script type = "text/javascript" >
+  function preventBack(){window.history.forward();}
+   setTimeout("preventBack()", 0);
+   window.onunload=function(){null};
+</script>
+
+<div class="topnav">
+  <a href="#" class="active" >Home</a>
+  <a href="admin_login" *ngIf=" sessionAdmin==null" >Admin</a>
+  <a href="admin_dashboard" *ngIf="sessionAdmin!=null" >Admin</a>
+ <a href="#" class="right" (click)="logout()"  *ngIf=" sessionAdmin!=null" >Logout</a>
+  
+</div>
+</html>

@@ -1,0 +1,25 @@
+.box{
+    width: 200px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 50px;
+    background-color: rgb(143, 131, 127);
+    border-radius: 50px;
+}
+
+.box .adminControl{
+
+  position: relative;
+  padding: 40px;
+  display:inline-flexbox;
+  padding:15px 32px;
+  text-align: center;
+  box-sizing: inherit;
+  width:100%;
+ 
+
+
+}

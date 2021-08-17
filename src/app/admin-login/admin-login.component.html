@@ -1,0 +1,31 @@
+<app-menu-bar></app-menu-bar>
+
+<html>
+    <script type = "text/javascript" >
+        function preventBack(){window.history.forward();}
+         setTimeout("preventBack()", 0);
+         window.onunload=function(){null};
+     </script>
+    
+	<head>
+		<meta name="viewport" charset="utf-8">
+	</head>
+    <body>
+	    <form method="post">
+            <div class="container">
+		        <div class="imgcontainer">
+                    <h2>Admin Login</h2>
+                    <img src="assets/images/admin.png" alt="Avatar" class="avatar">
+                </div>
+		        <input type="text" placeholder="Enter Email ID" name="uname" [(ngModel)]="aEmail" required>
+		        <input type="password" placeholder="Enter Password" name="psw" [(ngModel)]="aPassword" required> 
+                <div align="center">
+                    <button type="submit" (click)="Login()">Login</button>
+                </div>
+                
+            </div> 
+	    </form>
+    </body>
+</html>
+
+<router-outlet></router-outlet>

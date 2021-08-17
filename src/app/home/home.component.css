@@ -1,0 +1,233 @@
+/* *****     HOME LANDING SECTION ***** */
+#home{
+	min-width: 100%;
+	min-height: 100%;
+}
+.image-cover img{
+    position: relative;
+    z-index: -1;
+	left: 0;
+	top: 0;
+}
+
+.home-overlay{
+    /* background: #000000b3; */
+	background-color:rgba(0,0,0,0.7); 
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+	left: 0;
+	top: 0;
+}
+.small-underline{
+	position: absolute;
+	width: 50px;
+	height: 2px;
+	background: #ffa80a;
+	margin-top: 15px;	
+}
+.underline-text{
+	
+	color:#fff;
+	margin-left: 70px;
+	font-size: 20px;
+	font-weight:600;
+	text-transform: uppercase;
+}
+.img-info{
+	position: absolute;
+	z-index: 1;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	margin: 10px;
+}
+.big-white-text,.big-org-text{
+	color: #FFF;
+	font-size: 48px;
+	font-weight:bold;
+	text-transform: uppercase;
+/*	margin-top: 20px;*/
+}
+.big-org-text{
+	color: #ffa80a;
+}
+.home-para-text{
+	color: #fff;
+	font-size: 14px;
+	font-weight:400;
+	font-style: italic;
+	margin-top: 20px;
+}
+
+/* .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: #f76300;
+	/* color: #ffa80a; */
+/* }  */
+/* .owl-theme .owl-dots .owl-dot span:hover,
+.owl-theme .owl-dots .owl-dot span:focus{
+	background: #ffa80a ;
+}
+.owl-theme .owl-dots .owl-dot span{
+	background: red ;
+} */
+
+/* .owl-dot:active{
+	color: #ffa80a;
+	background: red ;
+}  */
+/* *** GOALS ***** */
+.t-margin{
+margin-top: 40px;
+}
+
+.goals-wrapper{
+	max-width: 800px;
+	text-align: justify;
+	margin: 0 auto;
+}
+.heading{
+	text-align: center;
+	color: #ffa80a;
+	font-size: 32px;
+	font-weight: bold;
+	margin-bottom: 45px;
+
+}
+
+/* ***** SKILLS **** */
+.subjects-list-wrapper{
+	margin: 15px;
+}
+.subject-name{
+	font-size: 28px;
+	font-weight: bold;
+	/* c51c1c */
+	background-color: #ffa80a;
+	padding: 50px 0;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.subject-name:focus,
+.subject-name:hover{
+	transition: all .8s ease-in-out;
+	cursor: pointer;
+	border: 1px solid #f76300;
+	color: #f76300;
+	background-color: #FFF;
+}
+.skills-wrapper h1{
+	margin-bottom: 45px;
+}
+
+
+/* *** RESPONSIVE CSS ***** */
+/LARGE DEVICES/
+@media(min-width: 1200px){
+	/*    its already fine , if found some bug we would add something later*/
+	}
+	/MEDIUM DEVICES/
+	@media(min-width: 992px) and (max-width: 1199px){
+	   .big-white-text,.big-org-text{
+		font-size: 44px;
+		font-weight:bold;
+		text-transform: uppercase;
+		margin-top: 0;
+	}
+		
+	.home-para-text {
+		margin-top: 10px;
+	}
+		
+	}
+	
+	
+	/SMALLL DEVICES : TABLETS/
+	
+	@media(min-width:768px) and (max-width:991px){
+		.big-white-text,.big-org-text{
+		font-size: 34px;
+		font-weight:bold;
+		text-transform: uppercase;
+		margin-top: 0;
+	}
+	.home-para-text {
+		font-size: 12px;
+		margin-top: 10px;
+	}
+	.small-underline {
+			width: 30px;
+			margin-top: 10px;
+	} 
+	.underline-text{
+			margin-left: 40px;
+			font-size: 14px;
+	}
+	.img-info{
+		margin-left: 7px;
+	}
+/* ****   OUR GOALS *** */
+.t-margin{
+	margin-top: 30px;
+	}
+	.goals-wrapper{
+		max-width: 600px;
+	}
+	.heading{
+		font-size: 28px;
+	}
+	.subject-name{
+		padding: 35px 0;
+		margin: 0 20px ;
+	}
+
+	}
+	
+	/EXTRA SMALL DEVICES : MOBILES/
+	@media(max-width:767px){
+		.big-white-text,.big-org-text{
+		font-size: 26px;
+		font-weight:bold;
+		text-transform: uppercase;
+		margin-top: 0;
+	}
+	.img-info{
+		margin: 5px;
+	}
+	.home-para-text {
+		font-size: 10px;
+		margin-top: 5px;
+	}
+	.small-underline {
+			width: 30px;
+			margin-top: 10px;
+	} 
+	.underline-text{
+			margin-left: 40px;
+			font-size: 14px;
+	}
+	
+
+	/* GOALS */
+	.t-margin{
+		margin-top: 20px;
+		}
+		.goals-wrapper{
+			max-width: 400px;
+		}
+		.heading{
+			font-size: 24px;
+		}
+		.remove-text{
+			display: none;
+		}
+		.subject-name{
+			padding:  35px 0;
+			
+		}
+	
+			   
+	}

@@ -1,0 +1,86 @@
+.container{
+    font-family: sans-serif;
+    text-align:right;
+}
+
+body {
+ 
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  color: #b9b9b9;
+  background-color: #e3e3e3;
+}
+
+input,
+input[type="radio"] + label,
+input[type="checkbox"] + label:before,
+select option,
+select {
+  width: 100%;
+  padding: 1em;
+  line-height: 1.4;
+  background-color: #f9f9f9;
+  border: 1px solid #e5e5e5;
+  border-radius: 3px;
+  -webkit-transition: 0.35s ease-in-out;
+  -moz-transition: 0.35s ease-in-out;
+  -o-transition: 0.35s ease-in-out;
+  transition: 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+select {
+  display: inline-block;
+  width: 50%;
+  text-align: left;
+  border-radius: 0;
+}
+.form-control{
+  margin:0px 60px 0pc 0px ;
+
+}
+
+
+select:active {
+  background-color: #f0a500;
+  color: #fff;
+  border-color: #bd8200;
+}
+select {
+  height: 3.4em;
+  line-height: 2;
+}
+
+.container {
+  max-width: 38em;
+  padding: 50px;
+  margin: 0em auto;
+  background-color: #fff;
+  border-radius: 4.2px;
+  box-shadow: 0px 3px 10px -2px rgba(0, 0, 0, 0.2);
+}
+@media only screen and (max-width: 540px) {
+  .col-half {
+    width: 100%;
+    padding-right: 0;
+  }
+}
+
+table{
+    border-collapse: collapse;width: 100%;
+    text-align: center;
+}
+table, td, .tr,th {
+    border: 1px solid black;color:black;
+  }
+  .tablehead{
+      background-color: green;
+      color:white;
+  }
+  button{
+padding:10px;
+margin: 10px 150px;
+text-align: center;
+background-color: rgb(92, 204, 92);
+
+  }

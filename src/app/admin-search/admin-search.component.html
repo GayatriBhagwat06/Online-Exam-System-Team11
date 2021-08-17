@@ -1,0 +1,78 @@
+<app-menu-bar></app-menu-bar>
+<html >
+    <script type = "text/javascript" >
+        function preventBack(){window.history.forward();}
+         setTimeout("preventBack()", 0);
+         window.onunload=function(){null};
+     </script>
+    
+<body>
+  <h1>Search Students</h1>
+  <div class="container">
+     <form (ngSubmit)="selectbyExam()">
+         <div class="form-group" >
+             <div>
+              <label>Technology</label>
+          <select class="form-control" name="technolgy Id" [(ngModel)]= "selectedtech">
+                  <option>--Select Technology--</option>
+                 <option *ngFor="let a of allExam">{{a.subjectId}}</option>
+              </select>
+            </div>
+              <div>
+               <div>
+                   <label>Level</label>
+                <select class="form-control" name="level" [(ngModel)]= "level">
+                        <option>--Select level--</option>
+                       <option *ngFor="let a of allLevel">{{a.levelId}}</option>
+                    </select>
+                  </div>
+           
+      </div>
+            <button >Search</button>
+           </div>
+        </form>
+           
+      
+        <div>
+            <input type=text placeholder="Search By User Id" name=e1 [(ngModel)]="userId" (ngModelChange)="updateUserArray()">
+       
+  </div>
+       
+        
+    
+  <table *ngIf="tempUsers && tempUsers.length">
+      <thead class="tablehead">
+          <tr >
+              <th>User ID</th>
+              <th>User Name</th>
+               <th>Score ID</th>
+               <th>Technology</th>
+               <th>Level 1 Score</th>
+               <th>Level 2 Score</th>
+               <th>Level 3 Score</th>
+                
+                
+               
+          </tr>
+      </thead>
+      <tbody>
+          <tr *ngFor = "let u of tempUsers">
+              <td>{{u.myuser.userId}}</td>
+              <td>{{u.myuser.firstName}} {{u.myuser.lastName}}</td>
+              <td>{{u.score_id}}</td>
+              <td>{{u.myexam.subjectName}}</td>
+              <td>{{u.l1Score}}</td>
+              <td>{{u.l2Score}}</td>
+              <td>{{u.l3Score}}</td>
+             
+              
+              
+              
+             
+              
+          </tr>
+      </tbody>
+      </table>
+  </div>
+  </body>
+  </html>

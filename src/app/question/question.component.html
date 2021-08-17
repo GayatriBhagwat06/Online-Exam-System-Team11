@@ -1,0 +1,27 @@
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <button class="btn btn-blue" type="submit" (click)="submit()">Submit test</button>
+          </div>
+        </div>
+      </div>
+      <form>
+        <p>{{questionNumber+1}} {{allQuestions[questionNumber].question}}</p>
+  
+          <input type="radio"  [name]="allQuestions[questionNumber].question" value="Option1" [(ngModel)]="userResponse[questionNumber].userAnswer"  >
+          <label for="op3"  style="padding: 15px;">{{allQuestions[questionNumber].option1}} </label><br>
+
+          <input type="radio"  [name]="allQuestions[questionNumber].question" value="Option2" [(ngModel)]="userResponse[questionNumber].userAnswer">
+          <label for="op3"  style="padding: 15px;">{{allQuestions[questionNumber].option2}} </label><br>
+
+          <input type="radio"  [name]="allQuestions[questionNumber].question" value="Option3" [(ngModel)]="userResponse[questionNumber].userAnswer">
+          <label for="op3"  style="padding: 15px;">{{allQuestions[questionNumber].option3}} </label><br>
+
+          <input type="radio"  [name]="allQuestions[questionNumber].question" value="Option4" [(ngModel)]="userResponse[questionNumber].userAnswer">  
+          <label for="op3"  style="padding: 15px;">{{allQuestions[questionNumber].option4}} </label><br>
+
+          <button class="btn btn-blue" *ngIf="questionNumber!=0"  value="prev" (click)="prevQues()">Previous</button>
+      <button class="btn btn-blue" *ngIf="allQuestions.length-1>questionNumber" value="next" (click)="nextQues()">Next</button>
+      </form>
+     

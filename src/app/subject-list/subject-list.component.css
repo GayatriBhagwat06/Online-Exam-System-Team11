@@ -1,0 +1,41 @@
+.sublist-wrapper{
+    width: 100%;
+    height: 100%;
+}
+
+.square {
+    float:left;
+    /* position: relative; */
+    width: 100%;
+    height:90%;
+    margin:1.66%;
+    background-color:white;
+    overflow:hidden;
+    border-radius: 20px;
+    box-shadow: rgba(0,0,0,0.8) 0 0 10px;    
+}
+
+.content {
+    /* position:absolute; */
+    height:90%; 
+    width:90%; 
+    padding: 10%;    
+}
+p {
+    font-size: larger;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+}
+
+.btn{
+    color: #fff;
+    list-style: none;
+    padding: 10px;
+    text-decoration: none;
+    outline: none;
+}
+.btn-blue{
+    color: #FFF;
+    display: inline-block;
+    background-color: blue;
+}

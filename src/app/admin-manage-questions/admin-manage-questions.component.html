@@ -1,0 +1,54 @@
+
+
+<app-menu-bar></app-menu-bar>
+<html  >
+    <script type = "text/javascript" >
+        function preventBack(){window.history.forward();}
+         setTimeout("preventBack()", 0);
+         window.onunload=function(){null};
+     </script>
+    
+    
+<body class="container">
+<div>
+
+      <form  (ngSubmit)="addquestion()" #userForm="ngForm">
+           <div class="form-group">
+             <div><input id="leveId" name="leveId" [(ngModel)]="levelId" type="text" class="form-control" placeholder="Enter level 1/2/3" required></div>                 
+         <div><input id="subjectId" [(ngModel)]="subjectId" name="subjectId" type="text" class="form-control" placeholder="Enter subject id 1/2/3/4/5/6" required></div>
+         <div><input id="question" [(ngModel)]="newQuestion.question" name="question"type="text" class="form-control" placeholder="Enter the question" required></div>
+            <div><input id="option1" [(ngModel)]="newQuestion.option1" name="option1" type="text" class="form-control" placeholder="Enter the option 1" required></div>
+         <div><input id="option2" [(ngModel)]="newQuestion.option2" name="option2" type="text" class="form-control" placeholder="Enter the option 2" required></div>
+              <div><input id="option3"  [(ngModel)]="newQuestion.option3" name="option3" type="text" class="form-control" placeholder="Enter the option 3" required></div>
+     <div><input id="option4" [(ngModel)]="newQuestion.option4" name="option4" type="text" class="form-control" placeholder="Enter the option 4" required></div>
+     <div><input id="answer"  [(ngModel)]="newQuestion.answer" name="answer" type="text" class="form-control" placeholder="Enter the correct option(Option1)" required></div>
+        <div><button  class="addques" type="Submit" >SUBMIT</button></div>
+         </div>
+               </form>
+  
+<table *ngIf="tempQuestion && tempQuestion.length">
+
+<thead class="tablehead">
+   <tr >
+       <th>Question ID</th>
+       <th>Question</th>
+        <th>Subject ID</th>
+        <th>level id</th>
+        <th>Action</th>
+     
+   </tr>
+</thead>
+       <tbody>
+           <tr *ngFor = "let q of tempQuestion">
+               <td>{{q.questionId}}</td>
+               <td>{{q.question}}</td>
+               <td>{{q.myexam.subjectId}}</td>
+               <td>{{q.mylevel.levelId}}</td>
+               <td><button class="del" (click)="deleteQuestions(q.questionId)">Del</button></td>
+            
+           </tr>
+       </tbody>
+       </table>
+</div>
+</body>
+</html>

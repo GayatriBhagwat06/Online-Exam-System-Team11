@@ -1,0 +1,22 @@
+.instruction-wrapper{
+   
+    margin: 10%;
+    padding: 20px;
+    border: 1px solid #bdc3c7;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
+}
+.content{
+    padding:5%;
+}
+.btn{
+    color: #fff;
+    list-style: none;
+    padding: 10px;
+    text-decoration: none;
+    outline: none;
+}
+.btn-blue{
+    columns: black;
+    display: inline-block;
+    background-color: blue;
+}

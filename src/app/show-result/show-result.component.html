@@ -1,0 +1,13 @@
+<div class="instruction-wrapper">
+    <div class="container">
+        <div class="row col-md-10">
+            <h1>You have submitted your test successfully</h1>
+           <h1>Your score is: {{examResult}}</h1>
+    
+       <div>
+        <button [disabled]="(examResult >60 && 3>=newLevel)? false:true" class="btn btn-blue" value="java" (click)="goToNextLevel()" >Go to next level</button>
+    </div>
+    
+        </div>
+    </div>
+</div>
