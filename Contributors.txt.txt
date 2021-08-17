@@ -1,0 +1,5 @@
+1.Gayatri Bhagwat:Exam Module
+2.Vidya Katara:Exam Module,Home and About us UI pages
+3.Ishan Bhosekar:Registration Module
+4.Soham Kalzunkar:Login Module(User,Admin)
+5.Lata Pangtey:Admin module

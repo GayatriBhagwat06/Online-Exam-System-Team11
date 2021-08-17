@@ -5,7 +5,7 @@
            <h1>Your score is: {{examResult}}</h1>
     
        <div>
-        <button [disabled]="(examResult >60 && 3>=newLevel)? false:true" class="btn btn-blue" value="java" (click)="goToNextLevel()" >Go to next level</button>
+        <button [disabled]="(examResult >60 && 3>newLevel)? false:true" class="btn btn-blue" value="java" (click)="goToNextLevel()" >Go to next level</button>
     </div>
     
         </div>

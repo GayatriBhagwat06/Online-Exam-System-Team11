@@ -10,14 +10,14 @@
             <input type="text" #un="ngModel" name="firstName" minlength="4" [(ngModel)]="reg.firstName" placeholder="Enter First name" required >  <br>
             <div *ngIf="un.invalid && (un.dirty || un.touched)" style="color: red;">
             <div *ngIf=un.errors?.required>Name is required</div>
-            <div *ngIf=un.errors?.minlength>Name must contain min 3 letters</div>
+            <div *ngIf=un.errors?.minlength>Name must contain min 4 letters</div>
             </div>
 
             
             <input type="text" #un="ngModel" name="lastName" minlength="4" [(ngModel)]="reg.lastName" placeholder="Enter Last name" required >  <br>
             <div *ngIf="un.invalid && (un.dirty || un.touched)" style="color: red;">
             <div *ngIf=un.errors?.required>Last Name is required</div>
-            <div *ngIf=un.errors?.minlength>Last Name must contain min 3 letters</div>
+            <div *ngIf=un.errors?.minlength>Last Name must contain min 4 letters</div>
             </div>
        
         <input type="password" #ps="ngModel"  name="upass"  [(ngModel)]="reg.password" placeholder="Enter password" > <br>
@@ -38,7 +38,7 @@
             <input type="text" #un="ngModel" name="qualification" minlength="4" [(ngModel)]="reg.qualification" placeholder="qualification" required >  <br>
             <div *ngIf="un.invalid && (un.dirty || un.touched)" style="color: red;">
             <div *ngIf=un.errors?.required>qualification is required</div>
-            <div *ngIf=un.errors?.minlength>qualification must contain min 3 letters</div>
+            <div *ngIf=un.errors?.minlength>qualification must contain min 4 letters</div>
             </div>
 
             

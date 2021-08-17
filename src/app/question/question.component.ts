@@ -56,7 +56,7 @@ export class QuestionComponent implements OnInit {
 
   prevQues(){
     if(this.userResponse[this.questionNumber].userAnswer!=undefined){
-      this.userResponse[this.questionNumber].userQuestionId=this.allQuestions[this.questionNumber-1].questionId;
+      this.userResponse[this.questionNumber].userQuestionId=this.allQuestions[this.questionNumber].questionId;
     this.questionNumber--;
 
     }
